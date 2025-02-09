@@ -7,3 +7,24 @@
 </ul>
 
 #### 하나씩 해내다 보면 목표 달성은 식은 죽 먹기!
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>🎨 Designer</th>
+      <th>💻 Frontend</th>
+      <th>🖥️ Frontend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Danielle</td>
+      <td>Alice</td>
+      <td>Sera</td>
+    </tr>
+  </tbody>
+</table>
+
