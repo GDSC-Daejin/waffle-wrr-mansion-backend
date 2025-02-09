@@ -1,0 +1,20 @@
+name: Deploy to Firebase Hosting on push
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 코드가 push되면 자동 배포
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
