@@ -13,14 +13,14 @@
 
 <table>
   <thead>
-    <tr>
+    <tr align="center">
       <th>🎨 Designer</th>
       <th>💻 Frontend</th>
       <th>🖥️ Frontend</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr align="center">
       <td>Danielle</td>
       <td>Alice</td>
       <td>Sera</td>
