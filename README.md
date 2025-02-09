@@ -1,6 +1,3 @@
-# waffle-wrr-mansion-backend
-와플-와르르멘션
-
 # Piece of Goal 🎂🏆 
 <ul>
   <li>감성적인 UI/UX로 직관적이고 즐거운 사용 경험 제공</li>
