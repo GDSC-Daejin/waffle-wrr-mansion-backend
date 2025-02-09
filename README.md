@@ -9,9 +9,7 @@
 
 #### 하나씩 해내다 보면 목표 달성은 식은 죽 먹기!
 <br/>
-<br/>
-<br/>
-<br/>
+
 <table>
   <thead>
     <tr align="center">
