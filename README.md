@@ -6,4 +6,24 @@
   <li>귀여운 디자인과 케이크 스티커로 사용자의 사용 유도 및 동기 부여</li>
 </ul>
 
-#### 하나씩 해내다 보면 목표 달성은 식은 죽 먹기!
+  #### 하나씩 해내다 보면 목표 달성은 식은 죽 먹기! 🍰
+<br/>
+
+# Member
+<table>
+  <thead>
+    <tr align="center">
+      <th>🎨 Designer</th>
+      <th>💻 Frontend</th>
+      <th>🖥️ Frontend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr align="center">
+      <td>Danielle</td>
+      <td>Alice</td>
+      <td>Sera</td>
+    </tr>
+  </tbody>
+</table>
+
