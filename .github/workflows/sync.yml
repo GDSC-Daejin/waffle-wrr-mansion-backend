@@ -26,5 +26,5 @@ jobs:
           git remote add upstream https://github.com/GDSC-Daejin/waffle-wrr-mansion-frontend.git || true
           git fetch upstream
           git checkout master
-          git merge upstream/master --allow-unrelated-histories
+          git merge upstream/main --allow-unrelated-histories
           git push origin master
