@@ -1,0 +1,30 @@
+name: Sync upstream to origin
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 매시간 자동으로 실행
+  push:
+    branches:
+      - master  # master 브랜치에서만 동작
+  workflow_dispatch:  # 필요할 때 수동 실행 가능
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream and fetch
+        run: |
+          git remote add upstream https://github.com/GDSC-Daejin/waffle-wrr-mansion-frontend.git || true
+          git fetch upstream
+          git checkout master
+          git merge upstream/master --allow-unrelated-histories
+          git push origin master
