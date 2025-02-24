@@ -67,3 +67,11 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# 시스템 폴더 무시
+AppData/
+.cache/
+.config/
+.vscode/
+.gradle/
+NTUSER.DAT*
