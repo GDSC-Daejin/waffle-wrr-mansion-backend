@@ -24,10 +24,5 @@ yarn-error.log*
 
 # 시스템 폴더 무시
 AppData/
-.cache/
-.config/
-.vscode/
-.gradle/
 Documents/
 My Documents/
-NTUSER.DAT*
