@@ -24,3 +24,9 @@ jobs:
           git fetch frontend
           git merge frontend/master --allow-unrelated-histories -m "Sync frontend changes"
           git push origin master
+
+     - name: Git 사용자 정보 설정
+       run: |
+       git config --global user.name "alicehr1n63"
+       git config --global user.email "clotilda4116@gmail.com"
+
