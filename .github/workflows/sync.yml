@@ -1,30 +1,26 @@
-name: Sync upstream to origin
+name: Sync Frontend Repo
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 매시간 자동으로 실행
+    - cron: '0 * * * *'  # 매시간 실행 (원하는 주기로 변경 가능)
+  workflow_dispatch:  # 수동 실행 가능
   push:
     branches:
-      - master  # master 브랜치에서만 동작
-  workflow_dispatch:  # 필요할 때 수동 실행 가능
+      - master  # master 브랜치에 push가 있을 때 실행
 
 jobs:
   sync:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 백엔드 레포지토리 가져오기
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 전체 커밋 가져오기
 
-      - name: Configure Git
+      - name: 프론트엔드 레포지토리 동기화
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Add upstream and fetch
-        run: |
-          git remote add upstream https://github.com/GDSC-Daejin/waffle-wrr-mansion-frontend.git || true
-          git fetch upstream
-          git checkout master
-          git merge upstream/main --allow-unrelated-histories
+          git remote add frontend https://github.com/GDSC-Daejin/waffle-wrr-mansion-frontend.git || true
+          git fetch frontend
+          git merge frontend/master --allow-unrelated-histories -m "Sync frontend changes"
           git push origin master
